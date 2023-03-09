@@ -1,7 +1,5 @@
 # Class Work
 
-### A. Use array functions:
-
 ```
 pop() - Removes the last element of the array and return that element
 push() - Adds new elements to the array and returns the new array length
@@ -21,7 +19,12 @@ toString() - Returns a string representation of the array
 toLocaleString() - Returns a localized string representing the array
 ```
 
+### A
 1. Create 4 arrays. Each one will be from a diffrent type(number, string, boolean, number + string).
    - Create all the arrays using generic method. (`Array<type>`)
 2. Add 5 values to each array.
 3. use 5 functions from the functions list above - and implement them on the arrays you created.
+
+### B
+4. Write a TypeScript program to find the most frequent item of an array.
+5. Write a TypeScript program to find duplicate values in array.

@@ -1,27 +1,67 @@
-var arr1 = new Array(5);
-var arr2 = new Array(5);
-var arr3 = new Array(5);
-var arr4 = new Array(5);
-for (var i = 0; i < arr1.length; i++) {
-    arr1[i] = i * i; // what would be the output?
+/*
+-----------------A-----------------
+*/
+var first = new Array(5);
+var second = new Array(5);
+var third = new Array(5);
+var fourth = new Array(5);
+for (var i = 0; i < first.length; i++) {
+    first[i] = i * i; // what would be the output?
 }
-arr2 = ["We", "Love", "Type", "Script", ":)"];
-for (var i = 0; i < arr3.length; i++) {
+second = ["We", "Love", "Type", "Script", ":)"];
+for (var i = 0; i < third.length; i++) {
     if (i % 2 == 0)
-        arr3[i] = true;
+        third[i] = true;
     else
-        arr3[i] = false;
+        third[i] = false;
     // What would be the output array?
 }
-for (var i = 0; i < arr4.length; i++) {
+for (var i = 0; i < fourth.length; i++) {
     if (i + 2 == 3)
-        arr4[i] = "Good job";
+        fourth[i] = "Good job";
     else if (i + 2 == 2)
-        arr4[i] = 55;
+        fourth[i] = 55;
     else
-        arr4[i] = "Thank you for your time";
+        fourth[i] = "Thank you for your time";
 }
-console.log(arr1);
-console.log(arr2);
-console.log(arr3);
-console.log(arr4);
+console.log(first);
+console.log(second);
+console.log(third);
+console.log(fourth);
+console.log("-------------------------------------\n");
+/*
+-----------------B-----------------
+*/
+// 4
+function mostFrequent(arr) {
+    arr.sort();
+    var most = 1, res = arr[0];
+    var current = 1;
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] == arr[i - 1])
+            current++;
+        else
+            current = 1;
+        if (current > most) {
+            most = current;
+            res = arr[i - 1];
+        }
+    }
+    return res;
+}
+var arr = [40, 50, 30, 40, 50, 30, 30];
+console.log("The most frequent item in the given array is: " + mostFrequent(arr));
+console.log("-------------------------------------\n");
+// 5
+function duplicateValues(input_arr) {
+    var output_arr = new Array();
+    for (var i = 0; i < input_arr.length; i++) {
+        for (var j = i + 1; j < input_arr.length; j++) {
+            if (input_arr[i] == input_arr[j])
+                output_arr.push(input_arr[j]);
+        }
+    }
+    return output_arr;
+}
+var temp = [1, 2, 3, 4, 2, 7, 8, 8, 3];
+console.log("The duplicated values is : {" + duplicateValues(temp) + "}");
