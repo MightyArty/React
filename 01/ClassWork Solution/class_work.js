@@ -65,3 +65,62 @@ function duplicateValues(input_arr) {
 }
 var temp = [1, 2, 3, 4, 2, 7, 8, 8, 3];
 console.log("The duplicated values is : {" + duplicateValues(temp) + "}");
+console.log("-------------------------------------\n");
+// 6
+function isPrime(n) {
+    if (n < 2)
+        return false;
+    for (var i = 2; i < n; i++) {
+        if (n % i == 0)
+            return false;
+    }
+    return true;
+}
+console.log(isPrime(11)); //true
+console.log(isPrime(13)); //true
+console.log(isPrime(7)); //true
+console.log(isPrime(6)); //false
+console.log(isPrime(9)); //false
+console.log("-------------------------------------\n");
+//8
+function stringPalindrome(s) {
+    if (s.length <= 1)
+        return true;
+    for (var i = 0; i < s.length / 2; i++) {
+        if (s.charAt(i) != s.charAt(s.length - i - 1))
+            return false;
+    }
+    return true;
+}
+var s = "abcdcba";
+var s1 = "abccccccdad";
+console.log(stringPalindrome(s)); //true
+console.log(stringPalindrome(s1)); //false
+console.log("-------------------------------------\n");
+/*
+-----------------C-----------------
+*/
+//9
+function maxSubArray(arr) {
+    var max_so_far = Number.MIN_VALUE;
+    var max_ending = 0;
+    var start = 0, end = 0;
+    var temp = 0;
+    for (var i = 0; i < arr.length; i++) {
+        max_ending = max_ending + arr[i];
+        if (max_so_far < max_ending) {
+            max_so_far = max_ending;
+            start = temp;
+            end = i;
+        }
+        if (max_ending < 0) {
+            max_ending = 0;
+            temp = i + 1;
+        }
+    }
+    console.log("Maximum contiguous sum is " + max_so_far);
+    console.log("Starting at index " + start);
+    console.log("Ending at index " + end);
+}
+var b = [-2, -3, 4, -1, -2, 1, 5, -3];
+maxSubArray(b);

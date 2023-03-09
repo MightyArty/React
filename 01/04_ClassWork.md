@@ -20,11 +20,22 @@ toLocaleString() - Returns a localized string representing the array
 ```
 
 ### A
+
 1. Create 4 arrays. Each one will be from a diffrent type(number, string, boolean, number + string).
    - Create all the arrays using generic method. (`Array<type>`)
 2. Add 5 values to each array.
 3. use 5 functions from the functions list above - and implement them on the arrays you created.
 
 ### B
+
 4. Write a TypeScript program to find the most frequent item of an array.
 5. Write a TypeScript program to find duplicate values in array.
+6. Write a TypeScript program that will check if number is prime or not.
+7. Write a function that will check if a number is palindrome or not.
+8. Write a function that will check if a string is palindrome or not.
+
+### C (~~HARD~~)
+
+9. Write a TypeScript program that will find the largest contiguous subarray
+for example: arr = [-2,-3,4,-1,-2,1,5,-3]
+maximum contiguous subarray of arr is -> 4+(-1)+(-2)+1+5=7
