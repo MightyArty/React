@@ -37,5 +37,26 @@ toLocaleString() - Returns a localized string representing the array
 ### C (~~HARD~~)
 
 9. Write a TypeScript program that will find the largest contiguous subarray
-for example: arr = [-2,-3,4,-1,-2,1,5,-3]
-maximum contiguous subarray of arr is -> 4+(-1)+(-2)+1+5=7
+   for example: arr = [-2,-3,4,-1,-2,1,5,-3]
+   maximum contiguous subarray of arr is -> 4+(-1)+(-2)+1+5=7
+
+### D (If left time)
+
+10. Create a class `Country` with the following:
+
+- countryName
+- capital of the Country
+- population
+- area
+- mainReligion
+
+> To each method add property enscapsulation
+
+- toString() - will print all the data about the specific country
+- peoplePerArea() - will calculate how many people live in 2km radius
+- OurHoliday() - will return the holiday name (any) according to the mainReligion.
+
+> Finally
+
+- Create an array of 5 countries with full details
+- Print all the details with the toString() method
