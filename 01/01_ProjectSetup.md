@@ -1,5 +1,7 @@
 # Setting up your first project
 
+> tomshabalin95@gmail.com
+
 ### After you installed typescript
 
 - Create a new folder `first project`
