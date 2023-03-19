@@ -33,10 +33,10 @@ console.log("-------------------------------------\n");
 -----------------B-----------------
 */
 // 4
-function mostFrequent(arr) {
-    arr.sort();
+function mostFrequent(arr) { 
+    arr.sort(); // [1,2,5,6,10,11,11,11]
     var most = 1, res = arr[0];
-    var current = 1;
+    var current = 1; //2
     for (var i = 1; i < arr.length; i++) {
         if (arr[i] == arr[i - 1])
             current++;
