@@ -1,0 +1,36 @@
+@media screen and (min-width: 300px) {
+    .main-schedule {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: url("https://cdn.pixabay.com/photo/2018/07/25/22/30/paris-3566859_1280.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: "Tahoma", sans-serif;
+      padding: 1rem;
+    }
+  
+    .schedule-header {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: black;
+      text-shadow: 0 0 0.125em rgba(255, 255, 255, 0), 0 0 0.7em currentColor;
+    }
+  
+    .schedule-table {
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .schedule-event {
+      text-align: center;
+    }
+  }
+  
