@@ -8,8 +8,10 @@ export const Login = (props) => {
   const [password, setPassword] = useState("");
   const [email_validation, setEmail_validation] = useState(true);
   const [password_validation, setPassword_validation] = useState(true);
+
   const { apiCall } = useApiContext();
   const { dispatch } = useAuthContext();
+  
   const navigate = useNavigate();
 
   const emailChangeHandler = (event) => {
@@ -33,7 +35,7 @@ export const Login = (props) => {
         email,
         password,
       });
-      console.log(status);
+      console.log(status); // 200 | 400
       localStorage.setItem("user", JSON.stringify(data.user));
       dispatch({ type: "LOGIN", payload: data.user });
       navigate("/" + data.user.title.toLowerCase());

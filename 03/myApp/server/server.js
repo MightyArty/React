@@ -21,6 +21,7 @@ app.use((req, res, next) => {
   next();
 });
 app.use("/api/users", userRouter);
+// app.use("/api/items", ItemRouter);
 app.use("/api/appointments", appointmentRouter);
 app.use("/api/messages", messageRouter);
 app.use("/api/dives", diveRouter);

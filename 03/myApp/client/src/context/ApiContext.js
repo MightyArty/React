@@ -11,7 +11,7 @@ export const ApiContextProvider = ({ children }) => {
     body,
     contentType = "application/json"
   ) => {
-    const customURL = BASE_URL + url;
+    const customURL = BASE_URL + url; //
     const result = await fetch(customURL, {
       headers: {
         "Content-Type": contentType,
