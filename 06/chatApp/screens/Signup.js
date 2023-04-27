@@ -11,6 +11,8 @@ import {
   StatusBar,
   Alert,
 } from "react-native";
+
+import { Picker } from "@react-native-picker/picker";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
 
@@ -54,7 +56,6 @@ export default function Signup({ navigation }) {
           value={password}
           onChangeText={(text) => setPassword(text)}
         />
-
         <TouchableOpacity style={styles.button} onPress={handleSignup}>
           <Text style={{ fontWeight: "bold", color: "#fff", fontSize: 18 }}>
             Sign Up
@@ -69,7 +70,7 @@ export default function Signup({ navigation }) {
           }}
         >
           <Text style={{ color: "gray", fontWeight: "600", fontSize: 14 }}>
-            Don't have an account?
+            Already have account?
           </Text>
           <TouchableOpacity onPress={() => navigation.navigate("Login")}>
             <Text style={{ color: "#f57c00", fontWeight: "600", fontSize: 14 }}>
