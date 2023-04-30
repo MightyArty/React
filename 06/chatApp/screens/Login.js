@@ -103,6 +103,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 12,
   },
+
   backImage: {
     width: "100%",
     height: 340,
