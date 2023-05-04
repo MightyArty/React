@@ -21,3 +21,7 @@ This course is designed to teach students how to work with TypeScript, JavaScrip
 ## Week 05
 
 > React Native Router usage
+
+## Week 06
+
+> Using Maps component, and creating a Login+Signup page with Firebase

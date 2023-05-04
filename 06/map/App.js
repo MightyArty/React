@@ -35,7 +35,7 @@ export default function App() {
           });
         }}
         query={{
-          key: Constants.manifest.extra.key,
+          key: "AIzaSyA7bj1RIYNsklS7GwFMfzYuaeS-MyZwZU0",
           language: "en",
           // components: "country: us",
           types: "establishment",
