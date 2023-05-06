@@ -43,11 +43,16 @@ export default function Chat() {
           <AntDesign
             name="logout"
             size={24}
-            color={colors.gray}
+            color={colors.white}
             style={{ marginRight: 10 }}
           />
         </TouchableOpacity>
       ),
+      headerBackTitle: "Back", // seting the back button
+      headerTintColor: colors.white,
+      headerStyle: {
+        backgroundColor: colors.primary,
+      },
     });
   }, [navigation]);
 

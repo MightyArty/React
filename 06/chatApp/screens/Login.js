@@ -78,6 +78,28 @@ export default function Login({ navigation }) {
             </Text>
           </TouchableOpacity>
         </View>
+        <View
+          style={{
+            marginTop: 20,
+            flexDirection: "row",
+            alignItems: "center",
+            alignSelf: "center",
+          }}
+        >
+          <Text style={{ color: "gray", fontWeight: "600", fontSize: 14 }}>
+            Forgow Password?
+          </Text>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate("ForgotPassword", { userEmail: "Your Name" })
+            }
+          >
+            <Text style={{ color: "#f57c00", fontWeight: "600", fontSize: 14 }}>
+              {" "}
+              Click here
+            </Text>
+          </TouchableOpacity>
+        </View>
       </SafeAreaView>
     </View>
   );
