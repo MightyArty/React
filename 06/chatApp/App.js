@@ -21,8 +21,9 @@ import Map from "./screens/Map";
 import ForgotPassword from "./screens/ForgotPassword";
 
 const Stack = createStackNavigator();
-const AuthenticatedUserContext = createContext({});
 const Tab = createBottomTabNavigator();
+
+const AuthenticatedUserContext = createContext({});
 
 /**
  * For checking if we have a user or not
@@ -163,3 +164,5 @@ const styles = StyleSheet.create({
     right: 15,
   },
 });
+
+//
