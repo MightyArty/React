@@ -25,3 +25,7 @@ This course is designed to teach students how to work with TypeScript, JavaScrip
 ## Week 06
 
 > Using Maps component, and creating a Login+Signup page with Firebase
+
+## Week 07
+
+> Using axios library to deal with API requests, and introduction to Tailwind CSS.
