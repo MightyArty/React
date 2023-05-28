@@ -29,3 +29,7 @@ This course is designed to teach students how to work with TypeScript, JavaScrip
 ## Week 07
 
 > Using axios library to deal with API requests, and introduction to Tailwind CSS.
+
+## Week 08
+
+> Using NewsAPI to fetch data to React Native application (using axios library).
